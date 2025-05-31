@@ -1,0 +1,112 @@
+BTVN buổi 2 - AutoT27 - Devpro
+1. Tìm element trong đường dẫn sau: https://accounts.saucelabs.com/am/XUI/#login/
+2. Tìm element trong đường dẫn sau: https://saucelabs.com/request-demo
+
+Bài làm:
+1. Tìm element trong đường dẫn https://accounts.saucelabs.com/am/XUI/#login/
+LOGO
+    //img[@class="top-bar-logo__img"]
+
+TIÊU ĐỀ
+    //h3[contains(text(), 'Sign in')]
+
+Username:
+    //following::section[@class="login-section form-container"]//span[contains(text(), 'User')]
+    //following::section[@class="login-section form-container"]//input[@id="idToken1"]
+
+Password
+    //following::section[@class="login-section form-container"]//span[contains(text(), 'Pass')]
+    //following::section[@class="login-section form-container"]//input[@id="idToken2"]
+
+Remember
+    //following::section[@class="login-section form-container"]//span[contains(@class,"checkmark")]
+    //following::section[@class="login-section form-container"]//label[contains(text(), 'Remember')]
+
+Forgot
+    //following::section[@class="login-section form-container"]//a[contains(text(), 'forgot')]
+
+Login
+    //following::section[@class="login-section form-container"]//input[contains(@id, "login")]
+
+Or sign in with
+    //following::section[@class="login-section form-container"]//p[contains(text(), 'or sign in')]
+    //following::section[@class="login-section form-container"]//a[contains(@title, 'Google')]
+    //following::section[@class="login-section form-container"]//a[contains(@title, 'GitHub')]
+    //following::section[@class="login-section form-container"]//a[contains(@title, 'SSO')]
+
+Not a customer
+    //following::section[@class="login-section form-container"]//span[contains(text(), 'customer')]
+    //following::section[@class="login-section form-container"]//a[contains(text(), 'for free')]
+
+Banner
+    //img[@class="banner-container__image"]
+
+
+2. Tìm element trong đường dẫn https://saucelabs.com/request-demo
+Header:
+    //following::header//img[contains(@src,"logo-black")]
+    //following::header//span[contains(text(),"Products")]
+    //following::header//span[contains(text(),"Solutions")]
+    //following::header//span[contains(text(),"Pricing")]
+    //following::header//span[contains(text(),"Develop")]
+    //following::header//span[text() = "Resources"]
+    //following::header//img[contains(@src,"black-double-chevron")]
+    //following::header//button[contains(text(), "Sign")]
+    //following::header//button[contains(text(), "demo")]
+    //following::header//button[contains(text(), "free")]
+    //following::header//img[contains(@src, "search")]
+
+Đường dẫn thư mục (Home > Request A Demo ...)
+    //following::div[@class="MuiContainer-root MuiContainer-maxWidthXl css-s9i69r"]//span[contains(text(),'Home')]
+    //following::div[@class="MuiContainer-root MuiContainer-maxWidthXl css-s9i69r"]//div[contains(@class,"css-64v5y1")]
+    //following::div[@class="MuiContainer-root MuiContainer-maxWidthXl css-s9i69r"]//span[contains(text(),'Demo')]
+
+Body
+    //following::div[@class="MuiBox-root css-uo6ls2"]//h1[contains(text(),'Demo')]
+    //following::div[@class="MuiBox-root css-uo6ls2"]//h2[contains(text(),'Talk')]
+    //following::div[@class="MuiBox-root css-uo6ls2"]//p[contains(text(),'can walk')]
+    //following::div[@class="MuiBox-root css-uo6ls2"]//img[contains(@src,'Blog')]
+    //following::div[@class="MuiBox-root css-uo6ls2"]//span[contains(text(),'Book')]
+
+    //following::div[@class="MuiBox-root css-uo6ls2"]//label[contains(text(),'Email')]
+    //following::div[@class="MuiBox-root css-uo6ls2"]//input[contains(@name,'Email')]
+    //following::div[@class="MuiBox-root css-uo6ls2"]//label[contains(text(),'Company')]
+    //following::div[@class="MuiBox-root css-uo6ls2"]//input[contains(@name,'Company')]
+    //following::div[@class="MuiBox-root css-uo6ls2"]//label[contains(text(),'Interest')]
+    //following::div[@class="MuiBox-root css-uo6ls2"]//select[contains(@name,'Interest')]
+    //following::div[@class="MuiBox-root css-uo6ls2"]//label[contains(text(),'Comments')]
+    //following::div[@class="MuiBox-root css-uo6ls2"]//textarea[contains(@name,'Comments')]
+    //following::div[@class="MuiBox-root css-uo6ls2"]//input[contains(@id,'Checkbox')]
+    //following::div[@class="MuiBox-root css-uo6ls2"]//label[contains(text(),'check this box')]
+    //following::div[@class="MuiBox-root css-uo6ls2"]//a[contains(text(),'Policy')]
+    //following::div[@class="MuiBox-root css-uo6ls2"]//button[contains(text(),'Talk')]
+
+    //following::div[@class="MuiStack-root css-qijtxs"]//h2[contains(text(),'by')]
+    //following::div[@class="MuiStack-root css-qijtxs"]//img[contains(@alt,'logo')]
+
+Footer
+    //following::div[@class="MuiBox-root css-70ca4w"]//img[contains(@alt,'quote')]
+    //following::div[@class="MuiBox-root css-70ca4w"]//img[contains(@src,'footer-logo')]
+
+    //following::div[@class="MuiBox-root css-70ca4w"]//span[contains(text(),'Products')]
+    //following::div[@class="MuiBox-root css-70ca4w"]//span[contains(text(),'for Test')]
+    //following::div[@class="MuiBox-root css-70ca4w"]//span[contains(text(),'Web Testing')]
+    //following::div[@class="MuiBox-root css-70ca4w"]//span[contains(text(),'App Test')]
+    //following::div[@class="MuiBox-root css-70ca4w"]//span[contains(text(),'App Distribution')]
+    //following::div[@class="MuiBox-root css-70ca4w"]//span[contains(text(),'Reporting')]
+    //following::div[@class="MuiBox-root css-70ca4w"]//span[contains(text(),'Visual')]
+    //following::div[@class="MuiBox-root css-70ca4w"]//span[contains(text(),'tools')]
+    //following::div[@class="MuiBox-root css-70ca4w"]//span[contains(text(),'Performance')]
+    //following::div[@class="MuiBox-root css-70ca4w"]//span[contains(text(),'Insights')]
+... các options và title khác của menu làm tương tự, thay text.
+
+    //following::div[@class="MuiBox-root css-70ca4w"]//div[@class="MuiBox-root css-1isemmb"]
+    //following::div[@class="MuiBox-root css-70ca4w"]//img[contains(@alt,"Twitter")]
+    //following::div[@class="MuiBox-root css-70ca4w"]//img[contains(@alt,"Face")]
+    //following::div[@class="MuiBox-root css-70ca4w"]//img[contains(@alt,"in")]
+    //following::div[@class="MuiBox-root css-70ca4w"]//span[contains(text(),'Terms')]
+    //following::div[@class="MuiBox-root css-70ca4w"]//span[contains(text(),'Policy')]
+    //following::div[@class="MuiBox-root css-70ca4w"]//span[contains(text(),'EEA')]
+    //following::div[@class="MuiBox-root css-70ca4w"]//span[contains(text(),'CCPA')]
+    //following::div[@class="MuiBox-root css-70ca4w"]//a[contains(text(),'Cookies')]
+    //following::div[@class="MuiBox-root css-70ca4w"]//span[contains(text(),'2025')]

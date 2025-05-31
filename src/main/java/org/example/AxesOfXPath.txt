@@ -1,0 +1,24 @@
+Axes trong XPath dùng để xác định "mối quan hệ" giữa nút (node) hiện tại và các nút khác trong XML.
+Nói cách khác, Axes giúp bạn điều hướng từ một nút đến các nút liên quan như cha, con, anh em,...
+	child: 	Chọn tất cả các con trực tiếp của node hiện tại
+	descendant: Chọn tất cả các con cháu của node hiện tại
+	parent: Chọn cha của node hiện tại
+	ancestor: 	Chọn tất cả các tổ tiên (cha, ông...) của node hiện tại
+	following-sibling: Chọn tất cả các node anh em phía sau node hiện tại
+	following: 	Chọn tất cả các node xuất hiện sau node hiện tại (trong tài liệu)
+	preceding: Chọn tất cả các node xuất hiện trước node hiện tại (trong tài liệu)
+	preceding-sibling:Chọn tất cả các node anh em phía trước node hiện tại
+	self: Chọn chính node hiện tại
+	descendant-or-self: Node hiện tại và tất cả các con cháu
+	ancestor-or-self: Node hiện tại và tất cả các tổ tiên
+
+
+tương đối theo text
+//div[contains(text(),'Sauce Labs Bolt T-Shirt')]
+tuyệt đối theo text
+//div[text()='Sauce Labs Bolt T-Shirt']
+
+tương đối theo phần tử:
+//input[contains(@id,'user-name')]
+tuyệt đối theo phần tử
+//input[@id='user-name']
