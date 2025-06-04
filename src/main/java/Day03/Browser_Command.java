@@ -16,7 +16,7 @@ public class Browser_Command {
         //forword lại trang hiện tại
 //        driver.navigate().forward();
         //refresh lại trang hiện tại
-        driver.navigate().refresh();
+//        driver.navigate().refresh();
         driver.close();
     }
 }
