@@ -33,10 +33,10 @@ public class Browser_Command {
         Thread.sleep(5000);
 //        elementID.isEnabled();
 
-
 //        WebElement elementLinkText = driver.findElement(By.linkText("Try it free"));
 //        WebElement elementPartialLinkText = driver.findElement(By.partialLinkText("Try it"));
 //        elementPartialLinkText.click();
 //        driver.quit();
+
     }
 }
