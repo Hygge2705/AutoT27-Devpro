@@ -54,6 +54,8 @@ public class HW_Day03_Case02 {
         // Click nút Let's Talk
         WebElement submit = driver.findElement(By.className("mktoButton"));
         submit.click();
-    }
 
+        driver.quit();
+
+    }
 }

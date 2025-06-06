@@ -16,7 +16,7 @@ public class UpLoadFile {
         System.out.println("Title: " + driver.getTitle());
 
         //Tạo biến chứa đường dẫn tệp tải lên
-        String filePath = "D:/HAU/Automation Test - DEVPRO-Auto27/AutoT27-Devpro/AutoT27-Devpro/target/imgMeme.jpg";
+        String filePath = "D:/HAU/Automation Test - DEVPRO-Auto27/AutoT27-Devpro/AutoT27-Devpro/imgMeme.jpg";
 
         //Tìm phần tử uploadfile_0 và gửi đường dẫn tệp
         WebElement upLoadFile = driver.findElement(By.id("uploadfile_0"));
