@@ -32,7 +32,7 @@ public class DropDownSelect {
         optionInterest.selectByVisibleText("Mobile Application Testing");
         System.out.println("Interest select by VisibleText successfully!");
 
-//        driver.quit();
+        driver.quit();
     }
 
 }
