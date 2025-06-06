@@ -30,6 +30,7 @@ public class JavaScriptExecutor {
         String selectedValue = dropListInterest.getAttribute("value");
         System.out.println("Interest selected: " +selectedValue);
 
+// Đóng trình duyệt
         driver.quit();
     }
 }
