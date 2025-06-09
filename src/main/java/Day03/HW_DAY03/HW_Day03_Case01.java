@@ -1,4 +1,4 @@
-package HW_DAY03;
+package Day03.HW_DAY03;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-public class HW_Day03_Case02 {
+public class HW_Day03_Case01 {
     static WebDriver driver = null;
 
     public static void main(String[] args) throws InterruptedException {
@@ -21,7 +21,7 @@ public class HW_Day03_Case02 {
         driver.get("https://saucelabs.com/request-demo");
         System.out.println("Title: " + driver.getTitle());
 
-        // Nhập email sai format
+        // Nhập email và chờ các trường khác xuất hiện
         WebElement inputEmail = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("Email")));
         inputEmail.sendKeys("thomthom@businessEmail.com");
 
@@ -56,6 +56,5 @@ public class HW_Day03_Case02 {
         submit.click();
 
         driver.quit();
-
     }
 }
